@@ -1,188 +1,181 @@
 /*****************
 GLOBAL
 *****************/
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@300;400;500;600&display=swap");
 
-.container {
-    max-width: 1060px;
-    margin: auto;
-}
+.container {  max-width: 1060px;  margin: auto;}
 
-h1, h2 {
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 2px;
-}
+h1,h2 {font-family: "Anton", sans-serif; letter-spacing: 2px;}
 
-h2 {
-    letter-spacing: 1px;
-}
+h2 { letter-spacing: 1px;}
 
-p, a, h3 {
-    font-family: 'Work Sans', sans-serif;
-}
+p,a,h3 {  font-family: "Work Sans", sans-serif;}
 
-hr {
-    border: none;
-    border-top: 1px solid;
-}
+hr { border: none; border-top: 1px solid;}
 
 /*****************
 HEADER
 *****************/
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cinema.jpg);
-    background-size: cover;
-    background-position: top;
-    color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/cinema.jpg);
+  background-size: cover;
+  background-position: top;
+  color: white;
 }
 header section nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
 }
 header section nav ul {
-    display: flex;    
+  display: flex;
 }
 header section nav ul li {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 header article {
-    text-align: center;
-    padding-top: 4em;
-    padding-bottom: 8em;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 8em;
 }
 #burger img {
-    width: 30px;
-    display: none;
-    color: white;
+  width: 30px;
+  display: none;
+  color: white;
 }
 
 /*****************
 CONCEPT
 *****************/
 #concept {
-    display: flex;
-    align-items: center;
-    margin: 3em auto;
+  display: flex;
+  align-items: center;
+  margin: 3em auto;
 }
 #concept img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: 100% center;
-    margin-right: 3em;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 100% center;
+  margin-right: 3em;
 }
 #concept article button {
-    background-color: rgb(151, 1, 52);
-    color: white;
-    padding: 0.7em 1em;
-    border: none;
-    margin-bottom: 1em;
+  background-color: rgb(151, 1, 52);
+  color: white;
+  padding: 0.7em 1em;
+  border: none;
+  margin-bottom: 1em;
 }
 
 /*****************
 PROGRAMME
 *****************/
 #programme {
-    background-image: linear-gradient(to top right, rgba(151, 1, 52, 0.5), transparent), url(../img/salle.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
+  background-image: linear-gradient(
+      to top right,
+      rgba(151, 1, 52, 0.5),
+      transparent
+    ),
+    url(../img/salle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 #programme article {
-    text-align: center;
-    padding: 3em;
+  text-align: center;
+  padding: 3em;
 }
 #programme article h3 {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 #programme article aside {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 #programme article aside div {
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 46%;
-    padding: 1em;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 46%;
+  padding: 1em;
 }
 
 /*****************
 ABONNEMENT
 *****************/
 #abonnement {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 #abonnement article {
-    text-align: center;
-    padding: 0 3em;
+  text-align: center;
+  padding: 0 3em;
 }
 #abonnement article aside {
-    display: flex;
-    justify-content: space-around;
-    color: white;
+  display: flex;
+  justify-content: space-around;
+  color: white;
 }
 #abonnement article aside div {
-    background-color: rgb(151, 1, 52);
-    padding: 0.5em 1em;
-    width: calc(30% - 1px);
+  background-color: rgb(151, 1, 52);
+  padding: 0.5em 1em;
+  width: calc(30% - 1px);
 }
 
 /*****************
 FOOTER
 *****************/
 footer {
-    text-align: center;
+  text-align: center;
 }
 footer hr {
-    margin: 3em 0 2em;
-    color: rgb(151, 1, 52);
+  margin: 3em 0 2em;
+  color: rgb(151, 1, 52);
 }
 
 /*****************
 RESPONSIVE MOBILE
 *****************/
 @media (max-width: 767px) {
-    /**HEADER**/
-    header section nav{
-        padding: 1em 2em;
-    }
-    header section nav ul {
-        display: none;
-    }
-    header section nav #burger img {
-        display: inline;
-    }
+  /**HEADER**/
+  header section nav {
+    padding: 1em 2em;
+  }
+  header section nav ul {
+    display: none;
+  }
+  header section nav #burger img {
+    display: inline;
+  }
 
-    /**CONCEPT**/
-    #concept {
+  /**CONCEPT**/
+  #concept {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    }
-    #concept img {
-        margin: 0;
-    }
+  }
+  #concept img {
+    margin: 0;
+  }
 
-    /**PROGRAMME**/
-    #programme article aside {
-        display: inline;
-    }
-    #programme article aside div {
-        width: 100%;
-        margin-bottom: 1em;
-    }
+  /**PROGRAMME**/
+  #programme article aside {
+    display: inline;
+  }
+  #programme article aside div {
+    width: 100%;
+    margin-bottom: 1em;
+  }
 
-    /**ABONNEMENT**/
-    #abonnement article aside {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1060px;
-    }
-    #abonnement article aside div {
-        width: 100%;
-        margin-bottom: 1em;
-    }
+  /**ABONNEMENT**/
+  #abonnement article aside {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1060px;
+  }
+  #abonnement article aside div {
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
